@@ -3,19 +3,28 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-             echo "build process"   
-        }
+                withMaven (maven : 'apache-maven-3.8.6')
+                {
+                bat 'mvn clean comple'    
+                }
+
+            }
         }
         stage('Test') { 
             steps {
-                echo "test process"
-        }
+                withMaven (maven : 'apache-maven-3.8.6')
+                {
+                bat 'mvn clean test'    
+                }
+            }
         }
         stage('Deploy') { 
             steps {
-             echo "deploy process" 
-            }
+                withMaven (maven : 'maven-3.8.6')
+                {
+               bat 'mvn clean comple'    
+                }
         }
     }
-}  
-        
+}
+}
