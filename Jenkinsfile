@@ -8,12 +8,12 @@ pipeline {
         }
         stage('test') {
             steps {
-                echo 'Chandni test'
+                echo 'Chandni test sucessfully done'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Chandni deploy'
+                echo 'Chandni deploy sucessfully'
             }
         }
     }
