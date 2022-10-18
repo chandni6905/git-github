@@ -11,11 +11,6 @@ pipeline {
                 echo 'Chandni test'
             }
         }
-        stage('test') {
-            steps {
-                echo 'Chandni home'
-            }
-        }
         stage('Deploy') {
             steps {
                 echo 'Chandni deploy'
