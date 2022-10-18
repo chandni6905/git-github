@@ -1,13 +1,21 @@
-node{
-    stage "Build"
-    
-    echo "my first pipline"
-
-    stage "Test"
-    
-    echo " my second pipline"
-
-    stage "Deploy"
-    
-    echo "my third pipline"
-}
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+             echo "build process"   
+        }
+        }
+        stage('Test') { 
+            steps {
+                echo "test process"
+        }
+        }
+        stage('Deploy') { 
+            steps {
+             echo "deploy process" 
+            }
+        }
+    }
+}  
+        
