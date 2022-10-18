@@ -1,13 +1,13 @@
-node {
+pipline {
     stage "Build"
     
-    echo "stage 1"
+    echo "my first pipline"
 
     stage "Test"
     
-    echo "stage 2"
+    echo " my second pipline"
 
     stage "Deploy"
     
-    echo "deployed"
+    echo "my third pipline"
 }
