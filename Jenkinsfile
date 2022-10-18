@@ -1,21 +1,15 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('Build') { 
+        stage('Example') {
             steps {
-                withMaven (maven : 'apache-maven-3.8.6')
-
+                echo 'Hello World'
             }
-        }
-        stage('Test') { 
-            steps {
-                withMaven (maven : 'apache-maven-3.8.6')
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                withMaven (maven : 'maven-3.8.6')
         }
     }
-}
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+    }
 }
