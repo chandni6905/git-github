@@ -1,4 +1,4 @@
-pipline {
+Python{
     stage "Build"
     
     echo "my first pipline"
