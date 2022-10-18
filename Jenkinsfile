@@ -11,6 +11,11 @@ pipeline {
                 echo 'Chandni test sucessfully done'
             }
         }
+        stage('lint') {
+            steps {
+                echo 'Chandni lint sucessfully'
+            }
+        }        
         stage('Deploy') {
             steps {
                 echo 'Chandni deploy sucessfully'
