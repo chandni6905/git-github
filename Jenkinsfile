@@ -11,7 +11,7 @@ pipeline {
                 echo 'Chandni test sucessfully done'
             }
         }
-        stage('lint') {
+        stage('infinte') {
             steps {
                 echo 'Chandni lint sucessfully'
             }
